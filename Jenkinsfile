@@ -21,7 +21,7 @@ pipeline{
         
         stage("Publish Docker Images to DockerHub"){
             steps{
-                sh "echo '$DOCKER_PASSWORD' | docker login -u '$DOCKER_USERNAME' -password-stdin"
+                sh "echo '$DOCKER_PASSWORD' | docker login -u '$DOCKER_USERNAME' --password-stdin"
                 sh "docker push '$DOCKER_USERNAME/udagram-api-user:latest'"
                 sh "docker push '$DOCKER_USERNAME/udagram-api-feed:latest'"
                 sh "docker push '$DOCKER_USERNAME/udagram-frontend:latest'"
