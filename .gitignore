@@ -44,3 +44,6 @@ venv/
 
 # Ignore set_env.sh file for security reasons
 set_env.sh
+
+# igoner .kubernetes folder
+kubernetes/
