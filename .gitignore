@@ -44,3 +44,10 @@ venv/
 
 # Ignore set_env.sh file for security reasons
 set_env.sh
+
+
+#ignore all secrets
+kubernetes/aws-secret.yaml
+kubernetes/env-configmap.yaml
+kubernetes/env-secret.yaml
+

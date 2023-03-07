@@ -23,5 +23,7 @@ spec:
         envFrom:
           - secretRef:
               name: envsecret
+          - secretRef:
+              name: awssecret
           - configMapRef:
               name: envconfigmap

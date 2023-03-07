@@ -22,6 +22,8 @@ spec:
                 name: envconfigmap
             - secretRef:
                 name: envsecret
+            - secretRef:
+                name: awssecret
           imagePullPolicy: Always
           resources:
             requests:
